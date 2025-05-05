@@ -16,7 +16,10 @@
         "files.trimFinalNewlines": true,
         "files.trimTrailingWhitespace": true
       },
-      "extensions": []
+      "extensions": [
+        // Github actions
+        "github.vscode-github-actions"
+      ]
     }
   }
 }
