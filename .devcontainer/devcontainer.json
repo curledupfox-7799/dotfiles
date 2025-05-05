@@ -4,6 +4,7 @@
   "containerEnv": {
     "TZ": "Asia/Tokyo"
   },
+  "onCreateCommand": "${containerWorkspaceFolder}/install.sh",
   "features": {},
   "customizations": {
     "vscode": {
