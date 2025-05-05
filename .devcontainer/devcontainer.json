@@ -4,6 +4,7 @@
   "containerEnv": {
     "TZ": "Asia/Tokyo"
   },
+  "onCreateCommand": "${containerWorkspaceFolder}/install.sh",
   "features": {},
   "customizations": {
     "vscode": {
@@ -14,11 +15,19 @@
         // Files
         "files.insertFinalNewline": true,
         "files.trimFinalNewlines": true,
-        "files.trimTrailingWhitespace": true
+        "files.trimTrailingWhitespace": true,
+        // Shell script
+        "[shellscript]": {
+          "editor.defaultFormatter": "foxundermoon.shell-format"
+        }
       },
       "extensions": [
         // Github actions
-        "github.vscode-github-actions"
+        "github.vscode-github-actions",
+        // Shell script
+        "foxundermoon.shell-format",
+        "mads-hartmann.bash-ide-vscode",
+        "timonwong.shellcheck"
       ]
     }
   }

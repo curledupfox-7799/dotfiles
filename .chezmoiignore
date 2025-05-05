@@ -1,0 +1,11 @@
+# Chezmoi
+/install.sh
+
+# Docs
+/README.md
+
+# Devcontainer
+/.devcontainer/
+
+# Github
+/.github/
