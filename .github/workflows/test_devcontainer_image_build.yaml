@@ -3,6 +3,10 @@ name: test_devcontainer_image_build
 on:
   - push
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test_devcontainer_image_build:
     runs-on: ubuntu-latest
